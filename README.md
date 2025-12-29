@@ -8,6 +8,9 @@
 
     "You shine in your darkest moments."
        "Now go and light the world!"
+
+
+       
 PROJECT: STARGAZER OMEGA
 STATUS: STABLE / REWRITTEN
 FORKED FROM: POC_D1_FORK3 (D-CYCLE)
