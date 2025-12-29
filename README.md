@@ -14,7 +14,6 @@ FORKED FROM: POC_D1_FORK3 (D-CYCLE)
 LEGACY: FORMERLY LIGHTLITE / LOBOS
 BASE: MODDED MIUI CIT (com.miui.cit)
 HARDWARE: XIAOMI 11 ULTRA (star)
-==================================================
 
 [DECONSTRUCTION LOG]
 The standard Android Flashlight API is a toy. MIUI's default LED management is a cage. 
