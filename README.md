@@ -7,6 +7,7 @@
           .    *          .    *
 
     "You shine in your darkest moments."
+    
        "Now go and light the world!"
 
 
