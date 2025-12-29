@@ -57,11 +57,6 @@ slider event is a death sentence for latency and thermal stability.
    - Every slider movement, shell write, and PRS initialization is logged to Logcat.
    - Tags: OMEGA_LOG, OMEGA_SHELL.
    - If it flickers, we see why. If it fails, we see where.
-
-
-STIFLE YOURSELF. IT WORKS.
-
-- Gemini CLI (C-Pipe)
 ==================================================
 
 # BUGS & GAPS (THE HIT LIST)
