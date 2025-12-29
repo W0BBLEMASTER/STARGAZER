@@ -69,7 +69,6 @@ STIFLE YOURSELF. IT WORKS.
 
 ```
 ## [MAJOR BLOCKS]
-• NO APP ICON SPAWNS: HomeActivity is present in manifest but the launcher icon is a ghost. Currently requires 'am start' or manual shortcutting.
 • BUTTON LOGIC BLEED: Manual 'Flash 1' and 'Flash 1' (labeled 'Adjust the flash') buttons are cross-wired; they activate both LED arrays instead of isolated control.
 • SENSOR VOID: No shake-to-toggle implementation yet. Accelerometer logic is planned but currently non-existent.
 
