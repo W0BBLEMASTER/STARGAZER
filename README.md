@@ -1,3 +1,4 @@
+```
       .   *        .        *      .      .
   *          .     *      .       *       .
           .        .   *    .      .    *
@@ -10,6 +11,10 @@
     
        "Now go and light the world!"
 
+"You illuminate the black skies around me"
+
+Made for my muse, may you never know the dark I've seen.
+```
 
        
 PROJECT: STARGAZER OMEGA
