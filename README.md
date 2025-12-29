@@ -8,7 +8,6 @@
 
     "You shine in your darkest moments."
 
-==================================================
 PROJECT: STARGAZER OMEGA
 STATUS: STABLE / REWRITTEN
 FORKED FROM: POC_D1_FORK3 (D-CYCLE)
