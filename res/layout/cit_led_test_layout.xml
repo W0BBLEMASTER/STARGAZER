@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/cit_led_check_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_margin="20.0sp"
+        android:layout_weight="8.0" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/seekbar_camera_flash_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="20.0sp"
+        android:layout_weight="1.0">
+        <TextView
+            android:textSize="20.0sp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/cit_camera_flash_adjust"
+            android:layout_marginStart="5.0sp" />
+        <SeekBar
+            android:id="@id/seekbar_camera_flash"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:maxHeight="2.0dip"
+            android:max="100"
+            android:progress="30"
+            android:layout_marginEnd="10.0sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@id/adjust_led_layout"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="2.0">
+        <View
+            android:background="#ff615959"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px" />
+        <TextView
+            android:textSize="20.0sp"
+            android:gravity="center_horizontal"
+            android:id="@id/current_led_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0sp"
+            android:text="@string/cit_led_selected" />
+        <SeekBar
+            android:layout_gravity="center_vertical"
+            android:id="@id/seekbar_led"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20.0sp"
+            android:maxHeight="2.0dip"
+            android:max="100"
+            android:progress="30"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

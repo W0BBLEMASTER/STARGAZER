@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/header_lt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip">
+        <TextView
+            android:id="@id/tv_bluetooth_scan_result"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/cit_comm_content_text" />
+        <Button
+            android:textSize="14.0dip"
+            android:id="@id/btn_retry_scan_bluetooth"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="5.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingBottom="5.0dip"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/cit_bluetooth_scan_retry"
+            android:includeFontPadding="false"
+            style="@style/cit_button_blue" />
+    </LinearLayout>
+    <com.wobblemaster.lightlite.connect.BluetoothListView
+        android:id="@id/bt_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_lt" />
+</RelativeLayout>

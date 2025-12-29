@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/list_item_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textAppearance="?android:textAppearanceMedium"
+        android:gravity="center|left"
+        android:paddingRight="20.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="@string/cit_tool_bluetooth_le_rx_50" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="150.0dip"
+        android:layout_height="100.0dip">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/cit_tool_bluetooth_le_rx_50_channel" />
+            <EditText
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_vertical"
+                android:id="@id/le_rx_50_channel_input"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="0"
+                android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/cit_tool_bluetooth_le_rx_50_phy" />
+            <EditText
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_vertical"
+                android:id="@id/le_rx_50_phy_input"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="2"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="20.0dip"
+        android:layout_width="120.0dip"
+        android:layout_height="fill_parent">
+        <Button
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/le_rx_50_run_stop"
+            android:paddingLeft="20.0dip"
+            android:layout_width="80.0dip"
+            android:layout_height="60.0dip"
+            android:text="@string/cit_tool_bluetooth_le_enhanced_run" />
+        <TextView
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="left"
+            android:layout_gravity="bottom"
+            android:id="@id/le_rx_50_cnt_packet"
+            android:background="#ff7fffd4"
+            android:paddingLeft="20.0dip"
+            android:layout_width="80.0dip"
+            android:layout_height="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/list_item_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textAppearance="?android:textAppearanceMedium"
+        android:gravity="center|left"
+        android:paddingRight="20.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="50.0dip"
+        android:text="@string/cit_tool_wlan_txrx_chain_selection" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RadioButton
+            android:id="@id/cit_tool_wlan_radio_chain1"
+            android:paddingRight="20.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/cit_tool_wlan_chain_1"
+            android:onClick="onRadioButtonClicked" />
+        <RadioButton
+            android:id="@id/cit_tool_wlan_radio_chain2"
+            android:paddingRight="20.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_wlan_chain_2"
+            android:onClick="onRadioButtonClicked" />
+        <RadioButton
+            android:id="@id/cit_tool_wlan_radio_chain1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_wlan_chain_1_2"
+            android:onClick="onRadioButtonClicked" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView
+        android:id="@id/play_video_surface"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="300.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_alignParentTop="true" />
+    <Button
+        android:id="@id/start_check_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:text="start_check"
+        android:layout_below="@id/play_video_surface" />
+    <TextView
+        android:textSize="24.0sp"
+        android:id="@id/chip_check_result_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50.0dip"
+        android:text=" "
+        android:layout_below="@id/start_check_bt"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

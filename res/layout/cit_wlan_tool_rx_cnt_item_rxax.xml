@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/list_item_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textAppearance="?android:textAppearanceMedium"
+        android:gravity="center|left"
+        android:paddingRight="20.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="@string/cit_tool_wlan_rxax_test" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="170.0dip"
+        android:layout_height="150.0dip">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/cit_tool_wlan_rxn_test_channel" />
+            <EditText
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_vertical"
+                android:id="@id/cit_tool_wlan_rx_ax_channel_input"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="1"
+                android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/cit_tool_wlan_rxn_test_bw" />
+            <EditText
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_vertical"
+                android:id="@id/cit_tool_wlan_rx_ax_bw_input"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="20"
+                android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/cit_tool_wlan_tx_n_txrt" />
+            <EditText
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_vertical"
+                android:id="@id/rx_ax_datarate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="3"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="20.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="100.0dip">
+        <Button
+            android:gravity="center"
+            android:layout_gravity="center|right"
+            android:id="@id/rxax_cnt_run_stop"
+            android:layout_height="40.0dip"
+            android:text="@string/cit_tool_wlan_rx_run"
+            style="@style/sub_btn_blue" />
+        <TextView
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@id/rxax_cnt_packet"
+            android:paddingLeft="20.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip" />
+    </LinearLayout>
+</LinearLayout>

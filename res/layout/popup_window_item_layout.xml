@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textColor="@color/home_text_cl"
+        android:gravity="center"
+        android:id="@id/tools_tv"
+        android:background="@drawable/bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cit_tool"
+        android:layout_weight="1.0" />
+    <TextView
+        android:textColor="@color/home_text_cl"
+        android:gravity="center"
+        android:id="@id/result_tv"
+        android:background="@drawable/bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cit_test_results"
+        android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip">
+        <Switch
+            android:textSize="30.0dip"
+            android:id="@id/location_switch"
+            android:layout_width="10.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:textOn="on"
+            android:textOff="off"
+            android:text="@string/cit_tool_gps_path_loss_test_request_location"
+            android:layout_weight="50.0"
+            android:switchMinWidth="20.0dip" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginBottom="8.0dip">
+        <ListView
+            android:id="@id/path_loss_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#ff000000"
+            android:dividerHeight="2.0dip"
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true" />
+    </RelativeLayout>
+</LinearLayout>

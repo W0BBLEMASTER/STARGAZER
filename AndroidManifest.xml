@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    android:compileSdkVersion="33"
+    android:compileSdkVersionCodename="13"
+    package="com.wobblemaster.lightlite"
+    platformBuildVersionCode="33"
+    platformBuildVersionName="13"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission
+        android:name="android.permission.ACCESS_FM_RECEIVER" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- Allows the app to use fingerprint hardware for authentication -->
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+    <!-- Allows the app to control the vibrator. -->
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <!-- Allows the app to communicate with Near Field Communication (NFC) tags, cards, and readers. -->
+    <uses-permission
+        android:name="android.permission.NFC" />
+    <!-- Allows the app to view the configuration of the Bluetooth on the phone, and to make and accept connections with paired devices. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+    <!-- Allows the app to configure the local Bluetooth phone, and to discover and pair with remote devices. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <!-- Allows the app to modify global audio settings such as volume and which speaker is used for output. -->
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Allows the app to connect to and disconnect from Wi-Fi access points and to make changes to device configuration for Wi-Fi networks. -->
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE" />
+    <!-- This app can get your approximate location from location services while the app is in use. Location services for your device must be turned on for the app to get location. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS" />
+    <!-- Allows the app to write the contents of your shared storage. -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- This app can record audio using the microphone while the app is in use. -->
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+    <!-- This app can get your precise location from location services while the app is in use. Location services for your device must be turned on for the app to get location. This may increase battery usage. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-feature
+        android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.flash" />
+    <uses-feature
+        android:name="android.hardware.usb.host" />
+    <uses-feature
+        android:name="android.hardware.camera2.full" />
+    <!-- This app can take pictures and record videos using the camera while the app is in use. -->
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.DEVICE_POWER" />
+    <!-- Allows the app to prevent the phone from going to sleep. -->
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+    <!-- Allows the app to modify the system's settings data. Malicious apps may corrupt your system's configuration. -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.READ_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission
+        android:name="com.miui.permission.ACCESS_ESE" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission
+        android:name="android.permission.MANAGE_USERS" />
+    <uses-permission
+        android:name="android.permission.MANAGE_FINGERPRINT" />
+    <uses-permission
+        android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE" />
+    <uses-permission
+        android:name="android.permission.BIND_DEVICE_ADMIN" />
+    <uses-permission
+        android:name="android.permission.QUERY_DO_NOT_ASK_CREDENTIALS_ON_BOOT" />
+    <uses-permission
+        android:name="android.permission.CRYPT_KEEPER" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the phone and allow the app to slow down the overall phone by always running. -->
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Allows the app to disable the keylock and any associated password security. For example, the phone disables the keylock when receiving an incoming phone call, then re-enables the keylock when the call is finished. -->
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- This app can appear on top of other apps or other parts of the screen. This may interfere with normal app usage and change the way that other apps appear. -->
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.CONTROL_INCALL_EXPERIENCE" />
+    <application
+        android:theme="@style/TestCaseTheme"
+        android:label="@string/app_name"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:name="com.wobblemaster.lightlite.CitApplication"
+        android:allowBackup="true"
+        android:extractNativeLibs="false"
+        android:resizeableActivity="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <uses-library
+            android:name="com.nxp.nfc.nq"
+            android:required="false" />
+        <meta-data
+            android:name="android.supports_size_changes"
+            android:value="true" />
+        <meta-data
+            android:name="miui.supportAppContinuity"
+            android:value="true" />
+        <meta-data
+            android:name="miui.supportDisabled"
+            android:value="true" />
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+        <receiver
+            android:name="com.wobblemaster.lightlite.receiver.CitBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.provider.Telephony.SECRET_CODE" />
+                <data
+                    android:scheme="android_secret_code"
+                    android:host="6484" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:label="@string/app_name"
+            android:name="com.wobblemaster.lightlite.AutoTest"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize|uiMode" />
+        <activity
+            android:theme="@style/HomeCaseTheme"
+            android:label="@string/app_name"
+            android:name="com.wobblemaster.lightlite.home.HomeActivity"
+            android:exported="true"
+            android:taskAffinity="com.wobblemaster.lightlite.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize|uiMode">
+            <intent-filter>
+                <action
+                    android:name="com.wobblemaster.lightlite.MAGIC_NUMBER" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.CitVersionCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.CitTFCard"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.sim.CitSimCardCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.sim.CitEsimCardCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.interactive.CitLedsCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.interactive.CitSoftLightCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.interactive.CitTouchpanelCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.interactive.CitViceTouchpanelCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.interactive.CitFoldScreenTouchPanelCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.interactive.CitSubScreenTouchPanelCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.interactive.CitDisplayCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.interactive.CitViceDisplayCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.interactive.CitFoldDisplayCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.interactive.CitSubDisplayCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.audio.CitHeadsetActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.audio.CitEarpieceCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.audio.CitConfingedSpeakerTestActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.audio.CitConfigedMicActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.audio.CitAudioHardwareCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.battery.CitBatteryCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.battery.CitOTGPlugCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.battery.CitChargerInOutCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.battery.CitChargerCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.battery.CitChargerWirelessCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.battery.CitReverseWirelessChargeActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.battery.CitUSB3CheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.battery.CitDPCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.connect.CitFMCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.connect.CitWifiScanCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.connect.CitWifiAddressCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.connect.CitBluetoothScanCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.connect.CitBluetoothAddressCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitAccelermeterSensorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitGyroscopeSensorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitAccelermeterSecondCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitGyroscopeSecondCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitMagneticSensorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitLightSensorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitProximitySensorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitFlickSensorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitTofSensorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitPressureSensorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitGyroscopeSensorSecondScreenCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitAccelermeterSensorSecondScreenCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitGpsCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitHallTestActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitHallTest2_0Activity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitDigitalSensorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitFoldHallTestActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.connect.CitNfcTestActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.CitVibratorActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.CitKeyBoardCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.CitExternalKeyboardTestActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.CitFpFodTestMainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.CitFpSensorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.CitFpTestMainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.CitPixeworksChipTestActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.sensor.CitSarSensorCollectDataCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitTakePicActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitMacroCameraCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitTeleCameraCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitDepthCameraCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitSuperTeleCameraCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitUltraCameraCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitRearDualCameraCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitFrontDualCameraCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitFrontAuxCameraCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitFrontMainCameraCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitRearMainCameraCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitRearMainCameraActuatorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitRearDualSecondCameraCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.hardware.CitPopCameraTestActivityReflect"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" /> ///////////////////////////////////////////////////////////////////// <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitHistoryTestResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode">
+            <intent-filter>
+                <action
+                    android:name="com.wobblemaster.lightlite.testResult" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> /////////////////////////////////////////////////////////////////////// <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.AuxiliaryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode">
+            <intent-filter>
+                <action
+                    android:name="com.wobblemaster.lightlite.auxiliary" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitAccelermeterSensorCali"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitGyroscopeSensorCali"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitAccelermeterSecondSensorCali"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitGyroscopeSecondSensorCali"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitPointerLocationCheck"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitAudioCaliSelfTest"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitProximitySensorCali"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitSarSensorCollectAndCali"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitBTToolTest"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@android:style/Theme.Holo.Light"
+            android:label="@string/cit_tool_bluetooth_enhanced"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitBTToolEnhancedTest"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@android:style/Theme.Holo.Light"
+            android:label="@string/cit_tool_bluetooth_rse"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitBluetoothToolRseActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitWlanToolTest"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@android:style/Theme.Holo.Light"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitWlanSnifferToolTest"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitSecondScreenGyroscopeSensorCali"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitSecondScreenAccelermeterSensorCali"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitSarAuthenticaTestActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitSarMtkAuthenticaTestActivity"
+            android:sharedUserId="android.uid.phone"
+            android:exported="true"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitUWBCaliTestActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitCaliPopCameraMotor"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitGnssPathLossToolTest"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitCustImgVersionCheck"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitISPv3CheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitDigitalHallSensorCali"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" /> ///////////////////////////////////////////////////////////////////// <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestDeviceInfoActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestAbnormalRebootActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestCopyCameraOTPActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestFlashLife"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestNfcActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestAudioSpkCalTfaActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestAudioLBMainMicToEarpieceActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestAudioLBConfigedMicToEarpieceActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestAudioLBMainMicToSpeakerActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestBatteryAuthentic"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestBatteryChargeLoggerCopy"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestBatteryDualConector"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.camera.AutoTestCameraStabActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.camera.AutoTestCamErrInfoActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestDualCameraCalFlag"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestFuseIDActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestJankLoggerCopyActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestKeyBoardActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestLcdCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestMotorCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestPowerLEDActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestSignalLoggerCopyActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestTouchSelfCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.camera.AutoTestRearSubCamera"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.camera.AutoTestRearMainCamera"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.camera.AutoTestFrontMainCamera"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.flash.AutoTestRearFlashActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.flash.AutoTestFrontFlashActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.flash.AutoTestBaseFlashActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.camera.AutoTestCameraHardware"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.camera.CameraHardwareCheckActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.autotest.AutoTestModemHardwareActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.camera.CitFrontMainCameraCheckActivityForJ18"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+        <activity
+            android:theme="@style/TestCaseTheme"
+            android:name="com.wobblemaster.lightlite.auxiliary.CitSarSensorAlgoDataCollect"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode" />
+    </application>
+</manifest>

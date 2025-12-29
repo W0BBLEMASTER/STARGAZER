@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:gravity="center"
+        android:id="@id/hint_plug_headset"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:text="@string/cit_headset_plug_hint"
+        style="@style/content_text" />
+    <TextView
+        android:gravity="center"
+        android:id="@id/play_pause"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:text="@string/cit_headset_button_play_pause"
+        style="@style/content_text" />
+    <TextView
+        android:gravity="center"
+        android:id="@id/next"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:text="@string/cit_headset_button_next"
+        style="@style/content_text" />
+    <TextView
+        android:gravity="center"
+        android:id="@id/previous"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cit_headset_button_previous"
+        style="@style/content_text" />
+    <TextView
+        android:gravity="center"
+        android:id="@id/play_pause2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:text="@string/cit_headset_button_play_pause"
+        style="@style/content_text" />
+    <TextView
+        android:gravity="center"
+        android:id="@id/next2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:text="@string/cit_headset_button_next"
+        style="@style/content_text" />
+    <TextView
+        android:gravity="center"
+        android:id="@id/previous2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cit_headset_button_previous"
+        style="@style/content_text" />
+    <TextView
+        android:gravity="center"
+        android:id="@id/left_hph_val_show"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cit_headset_left_hph_val"
+        style="@style/content_text" />
+    <TextView
+        android:gravity="center"
+        android:id="@id/right_hph_val_show"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cit_headset_right_hph_val"
+        style="@style/content_text" />
+</LinearLayout>

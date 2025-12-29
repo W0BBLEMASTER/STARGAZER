@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@id/prxdrx_rat_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_prx_drx_select_rat"
+            android:layout_weight="1.0" />
+        <Spinner
+            android:gravity="center"
+            android:id="@id/prxdrx_rat_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@id/prxdrx_mode_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_prx_drx_select_mode"
+            android:layout_weight="1.0" />
+        <Spinner
+            android:gravity="center"
+            android:id="@id/prxdrx_mode_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:gravity="center"
+            android:id="@id/prxdrx_button"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_prx_drx_start_test"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@id/asdiv_menu_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_asdiv_title"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@id/get_asdiv_status_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_asdiv_get_result_title"
+            android:layout_weight="1.0" />
+        <TextView
+            android:gravity="center"
+            android:id="@id/get_result_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@id/get_asdiv_tech_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_asdiv_get_result_tech_title"
+            android:layout_weight="1.0" />
+        <TextView
+            android:gravity="center"
+            android:id="@id/get_result_tech_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@id/get_asdiv_band_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_asdiv_get_result_band_title"
+            android:layout_weight="1.0" />
+        <TextView
+            android:gravity="center"
+            android:id="@id/get_result_band_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@id/get_asdiv_carrier_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_asdiv_get_result_carrier_title"
+            android:layout_weight="1.0" />
+        <TextView
+            android:gravity="center"
+            android:id="@id/get_result_carrier_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@id/get_asdiv_sub_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_asdiv_get_result_sub_title"
+            android:layout_weight="1.0" />
+        <TextView
+            android:gravity="center"
+            android:id="@id/get_result_sub_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:gravity="center"
+            android:id="@id/asdiv_get_button"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_asdiv_get_status"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@id/asdiv_set_status_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_asdiv_ant_pos_setting"
+            android:layout_weight="1.0" />
+        <Spinner
+            android:gravity="center"
+            android:id="@id/asdiv_set_status_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:gravity="center"
+            android:id="@id/asdiv_set_button"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_tool_asdiv_set_status"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

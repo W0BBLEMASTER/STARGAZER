@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@id/cit_accelermeter_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        style="?android:textAppearanceMedium" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip">
+        <Button
+            android:id="@id/cit_accelermeter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:text="@string/cit_start_calibration"
+            style="@style/sub_btn_blue" />
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:id="@id/cit_accelermeter_offsettextview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="?android:textAppearanceMedium" />
+    <TextView
+        android:gravity="center"
+        android:id="@id/cit_accelermeter_calibrationtextview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="?android:textAppearanceMedium" />
+</LinearLayout>

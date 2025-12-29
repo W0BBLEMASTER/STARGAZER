@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:gravity="center"
+            android:id="@id/tv_show_current_angle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:hint="@string/tips_show_current_angle" />
+        <TextView
+            android:gravity="center"
+            android:id="@id/tv_show_current_sar_sensor_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:hint="@string/tips_show_current_sar_sensor_data"
+            android:layout_below="@id/tv_show_current_angle" />
+        <TextView
+            android:textSize="40.0dip"
+            android:gravity="center"
+            android:id="@id/tv_calibrate_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:layout_below="@id/tv_show_current_sar_sensor_data" />
+        <Button
+            android:gravity="center"
+            android:id="@id/btn_calibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:text="@string/cit_start_calibration"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

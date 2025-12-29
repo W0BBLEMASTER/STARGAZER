@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/fingerprints_dark_gray"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_serialno"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="?android:textAppearanceMedium" />
+            <ImageView
+                android:id="@id/cit_serialno_image"
+                android:background="@android:color/white"
+                android:paddingTop="8.0dip"
+                android:paddingBottom="8.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_phoneserialno"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@id/cit_phoneserialno_image"
+                android:background="@android:color/white"
+                android:paddingTop="8.0dip"
+                android:paddingBottom="8.0dip"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_imei"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <ImageView
+                android:id="@id/cit_imei_image"
+                android:background="@android:color/white"
+                android:paddingTop="8.0dip"
+                android:paddingBottom="8.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_imei2"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <ImageView
+                android:id="@id/cit_imei_image2"
+                android:background="@android:color/white"
+                android:paddingTop="8.0dip"
+                android:paddingBottom="8.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_meid"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_build_number"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_userdata_version"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_system_key"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_baseband_version"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_kernel_version"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_cpuid"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_hardware_version"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/cit_sw_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:id="@id/cit_secureboot_status"
+                    android:background="@android:color/white"
+                    android:padding="4.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1.0dip"
+                    style="?android:textAppearanceMedium" />
+                <TextView
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:id="@id/cit_verifiedboot_status"
+                    android:background="@android:color/white"
+                    android:padding="4.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1.0dip"
+                    style="?android:textAppearanceMedium" />
+                <TextView
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:id="@id/cit_rpmb_status"
+                    android:background="@android:color/white"
+                    android:padding="4.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1.0dip"
+                    style="?android:textAppearanceMedium" />
+                <TextView
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:id="@id/cit_provision_status"
+                    android:background="@android:color/white"
+                    android:padding="4.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1.0dip"
+                    style="?android:textAppearanceMedium" />
+            </LinearLayout>
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_ese_mem"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <TextView
+                android:textSize="18.0dip"
+                android:textStyle="bold"
+                android:id="@id/cit_ese_cplc"
+                android:background="@android:color/white"
+                android:padding="4.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                style="?android:textAppearanceMedium" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/cit_hw_info"
+                android:background="@android:color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip">
+                <TextView
+                    android:textSize="16.0dip"
+                    android:textStyle="bold"
+                    android:id="@id/tp_version"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tp_version" />
+                <TextView
+                    android:textColor="#ffa0522d"
+                    android:id="@id/tp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/tp_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tp_color" />
+                <TextView
+                    android:textColor="#ffa0522d"
+                    android:id="@id/tp_colorinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/lcm_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lcminfo" />
+                <TextView
+                    android:textColor="#ffa0522d"
+                    android:id="@id/lcm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:id="@id/camera_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/camerainfo" />
+                <TextView
+                    android:textColor="#ffa0522d"
+                    android:id="@id/camera"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

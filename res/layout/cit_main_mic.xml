@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50.0dip">
+        <TextView
+            android:textSize="18.0dip"
+            android:textStyle="bold"
+            android:id="@id/mic_record_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="@string/mic_tip" />
+        <TextView
+            android:textSize="18.0dip"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_light"
+            android:id="@id/mic_check_tip_tv"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip" />
+        <TextView
+            android:textSize="18.0dip"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:id="@id/mic_volueme_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:text="@string/mic_volume_low_tip"
+            android:layout_above="@id/audio_pointer_v"
+            android:layout_centerHorizontal="true" />
+        <com.wobblemaster.lightlite.audio.DashboardView
+            android:id="@id/audio_pointer_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+</RelativeLayout>

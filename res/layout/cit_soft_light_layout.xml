@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginBottom="10.0dip">
+        <TextView
+            android:textSize="20.0sp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:id="@id/tv_soft_light_check"
+            android:layout_width="10.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0" />
+        <Button
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/btn_soft_light_check"
+            android:background="@drawable/btn_normal_selector"
+            android:padding="10.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0sp"
+            android:layout_weight="1.0"
+            android:layout_marginStart="10.0sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip">
+        <TextView
+            android:textSize="20.0sp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:id="@id/tv_cold_light_check"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0" />
+        <Button
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/btn_cold_light_check"
+            android:background="@drawable/btn_normal_selector"
+            android:padding="10.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0sp"
+            android:layout_weight="1.0"
+            android:layout_marginStart="10.0sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20.0sp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:id="@id/tv_warm_light_check"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0" />
+        <Button
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/btn_warm_light_check"
+            android:background="@drawable/btn_normal_selector"
+            android:padding="10.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0sp"
+            android:layout_weight="1.0"
+            android:layout_marginStart="10.0sp" />
+    </LinearLayout>
+</LinearLayout>

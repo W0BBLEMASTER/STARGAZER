@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/cit_nfc_check_layout"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@id/cit_bt_init_nfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cit_nfc_check_enable_tip" />
+    <TextView
+        android:textSize="18.0dip"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@id/cit_nfc_tips"
+        android:background="@color/summ_bg"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

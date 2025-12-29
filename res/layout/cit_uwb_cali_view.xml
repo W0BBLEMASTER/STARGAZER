@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/btns_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cit_uwb_calibrate_color_cali_tip" />
+        <RadioGroup
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/uwb_cali_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:layout_alignParentTop="true">
+            <RadioButton
+                android:id="@id/uwb_cali_white_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/cit_uwb_calibrate_color_white"
+                android:layout_weight="1.0" />
+            <RadioButton
+                android:id="@id/uwb_cali_black_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/cit_uwb_calibrate_color_black"
+                android:layout_weight="1.0" />
+            <RadioButton
+                android:id="@id/uwb_cali_gray_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/cit_uwb_calibrate_color_gray"
+                android:layout_weight="1.0" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:enabled="false"
+        android:id="@id/uwb_data_cali_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100.0dip"
+        android:text="@string/cit_uwb_calibrate_data_cali_tip"
+        android:layout_below="@id/btns_ll"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
