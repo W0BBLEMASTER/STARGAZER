@@ -7,7 +7,7 @@
           .    *          .    *
 
     "You shine in your darkest moments."
-
+       "Now go and light the world!"
 PROJECT: STARGAZER OMEGA
 STATUS: STABLE / REWRITTEN
 FORKED FROM: POC_D1_FORK3 (D-CYCLE)
@@ -54,9 +54,6 @@ slider event is a death sentence for latency and thermal stability.
    - Tags: OMEGA_LOG, OMEGA_SHELL.
    - If it flickers, we see why. If it fails, we see where.
 
-[FOR THE RECORD]
-This is not for "mere humans." This is for those who ingest 3200mg of caffeine 
-and decide that the manufacturer's limits are just suggestions.
 
 STIFLE YOURSELF. IT WORKS.
 
