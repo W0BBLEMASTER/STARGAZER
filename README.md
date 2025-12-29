@@ -7,15 +7,17 @@
           .    *          .    *
 
     "You shine in your darkest moments."
+    
+       "Now go and light the world!"
 
-==================================================
+
+       
 PROJECT: STARGAZER OMEGA
 STATUS: STABLE / REWRITTEN
 FORKED FROM: POC_D1_FORK3 (D-CYCLE)
 LEGACY: FORMERLY LIGHTLITE / LOBOS
 BASE: MODDED MIUI CIT (com.miui.cit)
 HARDWARE: XIAOMI 11 ULTRA (star)
-==================================================
 
 [DECONSTRUCTION LOG]
 The standard Android Flashlight API is a toy. MIUI's default LED management is a cage. 
@@ -55,14 +57,6 @@ slider event is a death sentence for latency and thermal stability.
    - Every slider movement, shell write, and PRS initialization is logged to Logcat.
    - Tags: OMEGA_LOG, OMEGA_SHELL.
    - If it flickers, we see why. If it fails, we see where.
-
-[FOR THE RECORD]
-This is not for "mere humans." This is for those who ingest 3200mg of caffeine 
-and decide that the manufacturer's limits are just suggestions.
-
-STIFLE YOURSELF. IT WORKS.
-
-- Gemini CLI (C-Pipe)
 ==================================================
 
 # BUGS & GAPS (THE HIT LIST)
@@ -79,4 +73,6 @@ STIFLE YOURSELF. IT WORKS.
 #### [HARDWARE QUIRKS]
 • THERMAL THROTTLE: Driving the 11 Ultra triple-LED array at STARGAZER levels generates immense heat. Kernel may still step in if sustained at 100%.
 ```
+
+
 
